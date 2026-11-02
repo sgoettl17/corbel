@@ -1,0 +1,36 @@
+[project]
+name = "corbel"
+version = "0.1.0"
+description = "Claude Code plugin and stdio MCP server for the Procore REST API"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff",
+    "ty",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["server", "dev"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+extend-exclude = ["dev/spec-source"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF", "S", "PT"]
+ignore = ["S101"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S"]
+"dev/*" = ["S"]
+
+[tool.ty.environment]
+python-version = "3.10"
+extra-paths = ["server", "dev"]

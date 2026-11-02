@@ -1,0 +1,1 @@
+[{"id":"RestV10SettingsPermissionsGet","m":"get","p":"/rest/v1.0/settings/permissions","t":"Company Admin/Users & Permissions/permissions","s":"Show permission manifest","d":"Company or project permission manifest for the current user","pp":[]}]

@@ -1,0 +1,51 @@
+{
+  "name": "corbel",
+  "displayName": "Corbel",
+  "version": "0.1.0",
+  "description": "Search and call the Procore REST API (3,000+ endpoints) from Claude, read-only by default. Unofficial; not affiliated with Procore.",
+  "author": { "name": "sgoettl17", "url": "https://github.com/sgoettl17" },
+  "homepage": "https://github.com/sgoettl17/corbel",
+  "repository": "https://github.com/sgoettl17/corbel",
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://github.com/sgoettl17/corbel#readme",
+  "supportUrl": "https://github.com/sgoettl17/corbel/issues",
+  "privacyPolicyUrl": "https://github.com/sgoettl17/corbel/blob/main/PRIVACY.md",
+  "license": "MIT",
+  "keywords": ["procore", "construction", "mcp", "project-management", "rest-api"],
+  "userConfig": {
+    "client_id": {
+      "type": "string",
+      "title": "Procore client ID",
+      "description": "Client ID of your Procore developer app (service account / client credentials).",
+      "required": true,
+      "sensitive": true
+    },
+    "client_secret": {
+      "type": "string",
+      "title": "Procore client secret",
+      "description": "Client secret of the same Procore developer app.",
+      "required": true,
+      "sensitive": true
+    },
+    "company_id": {
+      "type": "string",
+      "title": "Procore company ID",
+      "description": "Numeric company ID sent as the Procore-Company-Id header.",
+      "required": true
+    },
+    "environment": {
+      "type": "string",
+      "title": "Environment",
+      "description": "Which Procore environment to call.",
+      "options": ["production", "sandbox"],
+      "default": "production"
+    },
+    "allow_writes": {
+      "type": "string",
+      "title": "Allow changes to Procore",
+      "description": "Set to true to enable the create, update and delete tools. Leave false for read-only.",
+      "options": ["false", "true"],
+      "default": "false"
+    }
+  }
+}

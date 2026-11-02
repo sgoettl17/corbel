@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "corbel": {
+      "command": "python3",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/server/corbel_mcp.py"],
+      "env": {
+        "CORBEL_CLIENT_ID": "${user_config.client_id}",
+        "CORBEL_CLIENT_SECRET": "${user_config.client_secret}",
+        "CORBEL_COMPANY_ID": "${user_config.company_id}",
+        "CORBEL_ENVIRONMENT": "${user_config.environment}",
+        "CORBEL_ALLOW_WRITES": "${user_config.allow_writes}"
+      }
+    }
+  }
+}

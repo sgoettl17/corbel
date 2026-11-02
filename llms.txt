@@ -1,0 +1,11 @@
+# Corbel
+
+> Claude Code plugin and stdio MCP server for the Procore REST API. Unofficial. Read-only by default.
+
+- [README](README.md): install, tools, configuration
+- [AGENTS.md](AGENTS.md): repo layout, rules and Procore concepts for AI agents
+- [Domain guide skill](skills/procore-domain-guide/SKILL.md): how Procore data is organized and how to call the tools
+- [Standards](docs/standards.md): the Anthropic directory checklist this repo is held to
+- [Other MCP clients](docs/other-clients.md): Cursor and generic setup
+- [Security](SECURITY.md) and [Privacy](PRIVACY.md)
+- Endpoint index: spec/index/manifest.json lists the shards of 3,192 Procore operations

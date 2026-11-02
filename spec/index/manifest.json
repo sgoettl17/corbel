@@ -1,0 +1,297 @@
+{
+ "source": "Procore Rest API Documentation",
+ "source_created_at": "2026-08-25T20:57:08.160Z",
+ "operation_count": 3192,
+ "shards": [
+  {
+   "file": "company-admin-company-settings-1.json",
+   "area": "Company Admin/Company Settings",
+   "count": 74
+  },
+  {
+   "file": "company-admin-custom-configurable-tools-1.json",
+   "area": "Company Admin/Custom - Configurable Tools",
+   "count": 82
+  },
+  {
+   "file": "company-admin-project-level-configuration-1.json",
+   "area": "Company Admin/Project-Level Configuration",
+   "count": 11
+  },
+  {
+   "file": "company-admin-users-permissions-1.json",
+   "area": "Company Admin/Users & Permissions",
+   "count": 1
+  },
+  {
+   "file": "construction-financials-budget-1.json",
+   "area": "Construction Financials/Budget",
+   "count": 66
+  },
+  {
+   "file": "construction-financials-change-events-1.json",
+   "area": "Construction Financials/Change Events",
+   "count": 27
+  },
+  {
+   "file": "construction-financials-change-orders-1.json",
+   "area": "Construction Financials/Change Orders",
+   "count": 26
+  },
+  {
+   "file": "construction-financials-commitments-1.json",
+   "area": "Construction Financials/Commitments",
+   "count": 142
+  },
+  {
+   "file": "construction-financials-contracts-1.json",
+   "area": "Construction Financials/Contracts",
+   "count": 10
+  },
+  {
+   "file": "construction-financials-currency-configurations-1.json",
+   "area": "Construction Financials/Currency Configurations",
+   "count": 14
+  },
+  {
+   "file": "construction-financials-invoices-1.json",
+   "area": "Construction Financials/Invoices",
+   "count": 6
+  },
+  {
+   "file": "construction-financials-payments-1.json",
+   "area": "Construction Financials/Payments",
+   "count": 15
+  },
+  {
+   "file": "construction-financials-prime-contracts-1.json",
+   "area": "Construction Financials/Prime Contracts",
+   "count": 55
+  },
+  {
+   "file": "construction-financials-project-level-direct-costs-1.json",
+   "area": "Construction Financials/Project Level Direct Costs",
+   "count": 18
+  },
+  {
+   "file": "construction-financials-tax-1.json",
+   "area": "Construction Financials/Tax",
+   "count": 11
+  },
+  {
+   "file": "construction-financials-units-of-measure-1.json",
+   "area": "Construction Financials/Units of Measure",
+   "count": 8
+  },
+  {
+   "file": "construction-financials-work-breakdown-structure-1.json",
+   "area": "Construction Financials/Work Breakdown Structure",
+   "count": 71
+  },
+  {
+   "file": "core-assets-1.json",
+   "area": "Core/Assets",
+   "count": 83
+  },
+  {
+   "file": "core-directory-1.json",
+   "area": "Core/Directory",
+   "count": 162
+  },
+  {
+   "file": "core-documents-1.json",
+   "area": "Core/Documents",
+   "count": 44
+  },
+  {
+   "file": "core-file-access-storage-1.json",
+   "area": "Core/File Access & Storage",
+   "count": 22
+  },
+  {
+   "file": "core-portfolio-1.json",
+   "area": "Core/Portfolio",
+   "count": 10
+  },
+  {
+   "file": "core-project-1.json",
+   "area": "Core/Project",
+   "count": 35
+  },
+  {
+   "file": "core-tasks-1.json",
+   "area": "Core/Tasks",
+   "count": 15
+  },
+  {
+   "file": "core-workflows-1.json",
+   "area": "Core/Workflows",
+   "count": 52
+  },
+  {
+   "file": "platform-developer-tools-app-marketplace-1.json",
+   "area": "Platform - Developer Tools/App Marketplace",
+   "count": 9
+  },
+  {
+   "file": "platform-developer-tools-platform-services-1.json",
+   "area": "Platform - Developer Tools/Platform Services",
+   "count": 2
+  },
+  {
+   "file": "platform-developer-tools-webhooks-1.json",
+   "area": "Platform - Developer Tools/Webhooks",
+   "count": 36
+  },
+  {
+   "file": "preconstruction-bim-1.json",
+   "area": "Preconstruction/BIM",
+   "count": 55
+  },
+  {
+   "file": "preconstruction-bid-board-1.json",
+   "area": "Preconstruction/Bid Board",
+   "count": 35
+  },
+  {
+   "file": "preconstruction-bid-management-1.json",
+   "area": "Preconstruction/Bid Management",
+   "count": 46
+  },
+  {
+   "file": "preconstruction-cost-catalog-1.json",
+   "area": "Preconstruction/Cost Catalog",
+   "count": 12
+  },
+  {
+   "file": "preconstruction-estimating-1.json",
+   "area": "Preconstruction/Estimating",
+   "count": 31
+  },
+  {
+   "file": "procore-helix-reports-1.json",
+   "area": "Procore Helix/Reports",
+   "count": 1
+  },
+  {
+   "file": "project-management-action-plans-1.json",
+   "area": "Project Management/Action Plans",
+   "count": 173
+  },
+  {
+   "file": "project-management-coordination-issues-1.json",
+   "area": "Project Management/Coordination Issues",
+   "count": 56
+  },
+  {
+   "file": "project-management-daily-log-1.json",
+   "area": "Project Management/Daily Log",
+   "count": 121
+  },
+  {
+   "file": "project-management-document-management-1.json",
+   "area": "Project Management/Document Management",
+   "count": 11
+  },
+  {
+   "file": "project-management-document-markup-1.json",
+   "area": "Project Management/Document Markup",
+   "count": 113
+  },
+  {
+   "file": "project-management-drawings-1.json",
+   "area": "Project Management/Drawings",
+   "count": 38
+  },
+  {
+   "file": "project-management-emails-1.json",
+   "area": "Project Management/Emails",
+   "count": 19
+  },
+  {
+   "file": "project-management-field-productivity-1.json",
+   "area": "Project Management/Field Productivity",
+   "count": 213
+  },
+  {
+   "file": "project-management-forms-1.json",
+   "area": "Project Management/Forms",
+   "count": 19
+  },
+  {
+   "file": "project-management-incidents-1.json",
+   "area": "Project Management/Incidents",
+   "count": 156
+  },
+  {
+   "file": "project-management-inspections-1.json",
+   "area": "Project Management/Inspections",
+   "count": 191
+  },
+  {
+   "file": "project-management-meetings-1.json",
+   "area": "Project Management/Meetings",
+   "count": 28
+  },
+  {
+   "file": "project-management-observations-1.json",
+   "area": "Project Management/Observations",
+   "count": 28
+  },
+  {
+   "file": "project-management-photos-1.json",
+   "area": "Project Management/Photos",
+   "count": 11
+  },
+  {
+   "file": "project-management-punch-list-1.json",
+   "area": "Project Management/Punch List",
+   "count": 48
+  },
+  {
+   "file": "project-management-rfi-1.json",
+   "area": "Project Management/RFI",
+   "count": 52
+  },
+  {
+   "file": "project-management-schedule-legacy-1.json",
+   "area": "Project Management/Schedule (Legacy)",
+   "count": 56
+  },
+  {
+   "file": "project-management-scheduling-1.json",
+   "area": "Project Management/Scheduling",
+   "count": 18
+  },
+  {
+   "file": "project-management-specifications-1.json",
+   "area": "Project Management/Specifications",
+   "count": 60
+  },
+  {
+   "file": "project-management-submittals-1.json",
+   "area": "Project Management/Submittals",
+   "count": 87
+  },
+  {
+   "file": "resource-management-equipment-1.json",
+   "area": "Resource Management/Equipment",
+   "count": 95
+  },
+  {
+   "file": "resource-management-materials-management-1.json",
+   "area": "Resource Management/Materials Management",
+   "count": 234
+  },
+  {
+   "file": "resource-management-resource-planning-1.json",
+   "area": "Resource Management/Resource Planning",
+   "count": 75
+  },
+  {
+   "file": "resource-management-telematics-1.json",
+   "area": "Resource Management/Telematics",
+   "count": 3
+  }
+ ]
+}

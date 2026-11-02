@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.env
+.env.*
+# Large upstream OpenAPI export used only to regenerate spec/index (never commit; repo limit is 50 MiB)
+dev/spec-source/

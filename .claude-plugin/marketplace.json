@@ -1,0 +1,12 @@
+{
+  "name": "sgoettl17-plugins",
+  "description": "Plugins by sgoettl17, starting with Corbel for the Procore REST API.",
+  "owner": { "name": "sgoettl17" },
+  "plugins": [
+    {
+      "name": "corbel",
+      "source": "./",
+      "description": "Search and call the Procore REST API from Claude, read-only by default."
+    }
+  ]
+}
