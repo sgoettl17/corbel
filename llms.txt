@@ -8,4 +8,4 @@
 - [Standards](docs/standards.md): the Anthropic directory checklist this repo is held to
 - [Other MCP clients](docs/other-clients.md): Cursor and generic setup
 - [Security](SECURITY.md) and [Privacy](PRIVACY.md)
-- Endpoint index: spec/index/manifest.json lists the shards of 3,192 Procore operations
+- Endpoint index: spec/index/manifest.json lists the shards of 3,300+ Procore operations

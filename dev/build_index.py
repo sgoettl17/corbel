@@ -8,12 +8,14 @@ limit that Anthropic's plugin directory enforces.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import sys
 from pathlib import Path
 from typing import Any
 
+SOURCE_URL = "https://developers.procore.com/api/v1/resource_groups/full_oas"
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "spec" / "index"
 SHARD_LIMIT_BYTES = 180_000
@@ -121,20 +123,35 @@ def chunk_by_size(items: list[dict[str, Any]]) -> list[list[dict[str, Any]]]:
     return chunks
 
 
-def main() -> None:
-    if len(sys.argv) != 2:
-        raise SystemExit(__doc__)
-    spec = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
+def fingerprint(records: list[dict[str, Any]]) -> str:
+    """Hash of the indexed content, so a spec that only changed its timestamp is not a change."""
+    payload = json.dumps(records, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def build(spec: dict[str, Any], etag: str = "") -> dict[str, Any]:
+    """Write shards and manifest for a parsed OpenAPI spec and return the manifest."""
     records = collect(spec)
     shards = write_shards(records)
     manifest = {
         "source": spec["info"].get("title"),
+        "source_url": SOURCE_URL,
         "source_created_at": spec["info"].get("x-created-at"),
+        "source_etag": etag,
+        "fingerprint": fingerprint(records),
         "operation_count": len(records),
         "shards": shards,
     }
     (OUT_DIR / "manifest.json").write_text(json.dumps(manifest, indent=1) + "\n", encoding="utf-8")
-    print(f"{len(records)} operations in {len(shards)} shards -> {OUT_DIR}")
+    return manifest
+
+
+def main() -> None:
+    if len(sys.argv) != 2:
+        raise SystemExit(__doc__)
+    spec = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
+    manifest = build(spec)
+    print(f"{manifest['operation_count']} operations in {len(manifest['shards'])} shards")
 
 
 if __name__ == "__main__":

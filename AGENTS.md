@@ -12,7 +12,7 @@ Corbel: a Claude Code plugin that bundles a stdio MCP server for the Procore RES
 - `server/`: the MCP server. Standard library only. Flat modules, imported by name.
   - `mcp_stdio.py` protocol, `client.py` HTTP and auth, `spec_index.py` index search, `tools.py` tools, `corbel_mcp.py` entry point.
 - `spec/index/`: generated endpoint shards. Never edit by hand; regenerate with `dev/build_index.py`.
-- `dev/`: tooling that is not part of the runtime. `tests/`: pytest with a fake transport, no network.
+- `dev/`: tooling that is not part of the runtime. `dev/update_spec.py` compares Procore's published OAS (`developers.procore.com/api/v1/resource_groups/full_oas`) with the index and rebuilds it; the weekly `spec-update` workflow runs it. `tests/`: pytest with a fake transport, no network.
 
 ## Rules
 

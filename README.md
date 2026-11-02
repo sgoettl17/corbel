@@ -1,6 +1,6 @@
 # Corbel
 
-Corbel lets Claude search and call the [Procore REST API](https://developers.procore.com/reference/rest/docs/rest-api-overview) (3,192 endpoints) through a local MCP server. It is **read-only by default**.
+Corbel lets Claude search and call the [Procore REST API](https://developers.procore.com/reference/rest/docs/rest-api-overview) (3,300+ endpoints) through a local MCP server. It is **read-only by default**.
 
 > Corbel is an independent, unofficial project. It is not affiliated with, endorsed by, or sponsored by Procore Technologies, Inc. "Procore" is a trademark of its owner.
 

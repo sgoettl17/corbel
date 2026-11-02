@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 import pytest
 from client import ProcoreClient, ProcoreError
@@ -19,6 +20,7 @@ class FakeTransport:
         return status, resp_headers, json.dumps(body).encode()
 
 
+SPEC_DIR = Path(__file__).resolve().parent.parent / "spec" / "index"
 TOKEN = (200, {"access_token": "tok", "expires_in": 3600}, {})
 
 
@@ -42,7 +44,8 @@ def call(server, name, arguments):
 
 
 def test_index_covers_all_rest_operations():
-    assert len(SpecIndex().operations) == 3192
+    manifest = json.loads((SPEC_DIR / "manifest.json").read_text(encoding="utf-8"))
+    assert len(SpecIndex().operations) == manifest["operation_count"] > 3000
 
 
 def test_initialize_and_tool_list_are_read_only_by_default():
