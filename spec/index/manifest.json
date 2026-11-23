@@ -1,10 +1,10 @@
 {
  "source": "Procore Rest API Documentation",
  "source_url": "https://developers.procore.com/api/v1/resource_groups/full_oas",
- "source_created_at": "2026-11-02T18:31:51.028Z",
- "source_etag": "W/\"8ba0dae968358bcb440d8938d47e0e99\"",
- "fingerprint": "168cd612f6daa03ae2d3b1e4d4e72f8a40c7aed4f816d3f0d5b286bdb9fb49e1",
- "operation_count": 3337,
+ "source_created_at": "2026-11-21T00:58:29.136Z",
+ "source_etag": "W/\"fa24bcda35db86ba9fcc66202e48a085\"",
+ "fingerprint": "ccb2207619d7eb14adc7fe227a5f1d0efc211f6cf5e6f0321a1c35047ed821c7",
+ "operation_count": 3387,
  "shards": [
   {
    "file": "company-admin-company-settings-1.json",
@@ -49,7 +49,7 @@
   {
    "file": "construction-financials-commitments-1.json",
    "area": "Construction Financials/Commitments",
-   "count": 142
+   "count": 143
   },
   {
    "file": "construction-financials-contracts-1.json",
@@ -60,6 +60,11 @@
    "file": "construction-financials-currency-configurations-1.json",
    "area": "Construction Financials/Currency Configurations",
    "count": 12
+  },
+  {
+   "file": "construction-financials-funding-sources-1.json",
+   "area": "Construction Financials/Funding Sources",
+   "count": 18
   },
   {
    "file": "construction-financials-invoices-1.json",
@@ -99,7 +104,7 @@
   {
    "file": "core-assets-1.json",
    "area": "Core/Assets",
-   "count": 93
+   "count": 95
   },
   {
    "file": "core-directory-1.json",
@@ -109,7 +114,7 @@
   {
    "file": "core-documents-1.json",
    "area": "Core/Documents",
-   "count": 44
+   "count": 48
   },
   {
    "file": "core-file-access-storage-1.json",
@@ -124,7 +129,7 @@
   {
    "file": "core-project-1.json",
    "area": "Core/Project",
-   "count": 36
+   "count": 38
   },
   {
    "file": "core-rates-1.json",
@@ -169,7 +174,7 @@
   {
    "file": "preconstruction-bid-management-1.json",
    "area": "Preconstruction/Bid Management",
-   "count": 46
+   "count": 48
   },
   {
    "file": "preconstruction-cost-catalog-1.json",
@@ -189,7 +194,7 @@
   {
    "file": "project-management-action-plans-1.json",
    "area": "Project Management/Action Plans",
-   "count": 173
+   "count": 174
   },
   {
    "file": "project-management-coordination-issues-1.json",
@@ -204,12 +209,12 @@
   {
    "file": "project-management-document-management-1.json",
    "area": "Project Management/Document Management",
-   "count": 33
+   "count": 36
   },
   {
    "file": "project-management-document-markup-1.json",
    "area": "Project Management/Document Markup",
-   "count": 118
+   "count": 120
   },
   {
    "file": "project-management-drawings-1.json",
@@ -224,7 +229,7 @@
   {
    "file": "project-management-field-productivity-1.json",
    "area": "Project Management/Field Productivity",
-   "count": 213
+   "count": 221
   },
   {
    "file": "project-management-forms-1.json",
@@ -239,7 +244,7 @@
   {
    "file": "project-management-inspections-1.json",
    "area": "Project Management/Inspections",
-   "count": 194
+   "count": 195
   },
   {
    "file": "project-management-meetings-1.json",
@@ -289,12 +294,12 @@
   {
    "file": "resource-management-equipment-1.json",
    "area": "Resource Management/Equipment",
-   "count": 95
+   "count": 97
   },
   {
    "file": "resource-management-materials-management-1.json",
    "area": "Resource Management/Materials Management",
-   "count": 235
+   "count": 239
   },
   {
    "file": "resource-management-resource-planning-1.json",
